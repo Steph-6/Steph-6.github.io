@@ -23,7 +23,7 @@ github_username: Steph-6
 
 # Build settings
 markdown: kramdown
-theme: jekyll-athena
+theme: jekyll-theme-tactile
 gems:
   - jekyll-feed
 exclude:
