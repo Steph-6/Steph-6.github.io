@@ -4,10 +4,8 @@ layout: portfolio
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Portfolio 1](project-1).
-[Portfolio 2](another-page).
-[Link to another page](another-page).
-[Link to another page](another-page).
+[Projects](projects).
+[About Me](about).
 
 There should be whitespace between paragraphs.
 

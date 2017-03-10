@@ -2,3 +2,30 @@
 ---
 
 @import "jekyll-theme-tactile";
+header {
+  background-image: url('../images/horizontal-header.png');
+  background-size: cover;
+  opacity: 0.6;
+  padding: 30px;
+  border-bottom: 3px solid #444444;
+  z-index: -1;
+  h2 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 300;
+    margin-left: 20px;
+  }
+  img {
+    float: right;
+    margin-top: -75px;
+    margin-right: 10px;
+  }
+}
+a {
+  color: #333333;
+}
+
+a:hover {
+  color: #333333;
+  text-decoration: line-through;
+}
