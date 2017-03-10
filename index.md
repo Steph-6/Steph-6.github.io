@@ -4,12 +4,8 @@ layout: portfolio
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Projects](projects).
-[About Me](about).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+[Projects](projects)
+[About Me](about)
 
 # [](#header-1)Header 1
 

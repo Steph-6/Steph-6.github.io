@@ -3,9 +3,9 @@
 
 @import "jekyll-theme-tactile";
 header {
-  background-image: url('../images/horizontal-header.png');
+  background-image: url('../images/horizontal.png');
   background-size: cover;
-  opacity: 0.6;
+  // opacity: 0.6;
   padding: 30px;
   border-bottom: 3px solid #444444;
   z-index: -1;
@@ -23,9 +23,30 @@ header {
 }
 a {
   color: #333333;
+  font-size: 20px
 }
 
 a:hover {
   color: #333333;
   text-decoration: line-through;
+}
+
+.link {
+  a {
+    padding: 20px;
+  }
+  a:hover {
+    text-decoration: none;
+    img {
+      animation: expand 0.4s infinite ease-in-out;
+    }
+  }
+}
+
+@keyframes expand {
+  50% { height: 32px; }
+}
+
+footer {
+  padding: 30px;
 }
