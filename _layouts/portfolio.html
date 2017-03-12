@@ -5,6 +5,7 @@
     <title>Stephanie Robinson</title>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -13,77 +14,113 @@
     <script src="../script/app.js" charset="utf-8"></script>
   </head>
   <body>
+    <header>
+      <h2>STEPHANIE <br/> ROBINSON</h2>
+      <img src="../assets/images/logo.png" width="120px">
+    </header>
+
+    <div id="main_content">
+
+      <div class="links">
+        <div class="link">
+          <a href="https://www.linkedin.com/in/stephanie-robinson/">
+            <img src="../assets/images/linkedin.png" height="30px">
+          </a>
+        </div>
+        <div class="link">
+          <a href="https://github.com/Steph-6">
+            <img src="../assets/images/github.png" height="30px">
+            <img class="mark" src="../assets/images/github-mark.png" height="30px">
+          </a>
+        </div>
+        <div class="email-link">
+          <div id="email">steph.robinson95@gmail.com</div>
+          <img id="email-icon" src="../assets/images/email.png" height="30px">
+        </div>
+      </div>
+
+      <div class="links">
+        <div class="link">
+          <h6>About</h6>
+        </div>
+        <div class="link">
+          <h6>1</h6>
+        </div>
+        <div class="link">
+          <h6>2</h6>
+        </div>
+        <div class="link">
+          <h6>3</h6>
+        </div>
+        <div class="link">
+          <h6>4</h6>
+        </div>
+      </div>
 
 
-      <header>
-          <h2>STEPHANIE <br/> ROBINSON</h2>
-          <img src="../assets/images/logo.png" width="120px">
-      </header>
-      <div class="inner">
-        <div id="main_content">
-
-          <div class="links">
-            <div class="link">
-              <a href="https://www.linkedin.com/in/stephanie-robinson/">
-              <img src="../assets/images/linkedin.png" height="30px"></a>
-            </div>
-            <div class="link">
-              <a href="https://github.com/Steph-6">
-              <img src="../assets/images/github.png" height="30px">
-              <img src="../assets/images/github-mark.png" height="30px"></a>
-            </div>
-            <div class="email-link">
-              <div>
-                <img id="email-icon" src="../assets/images/email.png" height="30px">
-                <div id="email">steph.robinson95@gmail.com</div>
-              </div>
-            </div>
+      <!-- <div class="views">
+        <ul>
+          <li><a href="#">About</a></li>
+          <div class="about section">
+            <h6>my name is stephanie</h6>
           </div>
 
-          <!-- <div class="views">
-            <div id="about">
-              <a href="#">About</a>
-            </div>
-            <div id="project1" class="projects">
-              <a href="#">Forest Floor</a>
-            </div>
-            <div id="project2" class="projects">
-              <a href="#">Night Mapper</a>
-            </div>
-            <div id="project3" class="projects">
-              <a href="#">nApp</a>
-            </div>
-            <div id="project4" class="projects">
-              <a href="#">VeNews</a>
-            </div>
-            <div class="content">
-            </div>
-          </div> -->
+          <li><a href="#">Forest Floor</a></li>
+          <div class="project1  section">
+            <h6>Forest Floor</h6>
+          </div>
 
-            <div class="views">
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Forest Floor</a></li>
-                <li><a href="#">NightMapper</a></li>
-                <li><a href="#">nApp</a></li>
-                <li id="bottom-row"><a href="#">VeNews</a></li>
-              </ul>
-            </div>
-          <canvas id="paper" width="100%" height="100%"></canvas>
+          <li><a href="#">NightMapper</a></li>
+          <div class="project2  section">
+            <h6>NightMapper</h6>
+          </div>
 
+          <li><a href="#">nApp</a></li>
+          <div class="project3  section">
+            <h6>nApp</h6>
+          </div>
 
+          <li><a href="#">VeNew</a></li>
+          <div class="project4  section">
+            <h6>VeNew</h6>
+          </div>
+        </ul> -->
 
-
-          <!-- <div>
-            <h6>{{ content }}</h6>
-          </div> -->
-          <!-- <div id="container">
-        </div> -->
+        <div class="">
+          {{ content }}
+        </div>
 
       </div>
-      <!-- <footer>
-        This page was generated by GitHub Pages.
-      </footer> -->
+
+
     </div>
   </body>
 </html>
+
+<!-- <div class="views">
+  <div id="about">
+    <a href="#">About</a>
+  </div>
+  <div id="project1" class="projects">
+    <a href="#">Forest Floor</a>
+  </div>
+  <div id="project2" class="projects">
+    <a href="#">Night Mapper</a>
+  </div>
+  <div id="project3" class="projects">
+    <a href="#">nApp</a>
+  </div>
+  <div id="project4" class="projects">
+    <a href="#">VeNews</a>
+  </div>
+  <div class="content">
+  </div>
+</div> -->
+<!-- <div>
+  <h6>{{ content }}</h6>
+</div> -->
+
+
+<!-- <footer>
+This page was generated by GitHub Pages.
+</footer> -->

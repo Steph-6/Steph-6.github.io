@@ -3,8 +3,13 @@ $(function() {
   // let projects = false;
   $('#email').css('display', 'none');
   $('.email-link').on('mouseover', function() {
-    $('#email').delay(3000).css('display', 'inline-block');
-    $('#email-icon').addClass('slide');
+    $('#email').addClass('animated slideInLeft');
+    $('#email').css('display', 'inline-block');
+    $('#email-icon').addClass('rotate');
+  });
+
+  $('.mark').on('mouseover', function() {
+    $('.mark').addClass('rotate');
   });
 
   // $('#about').on('click', function() {

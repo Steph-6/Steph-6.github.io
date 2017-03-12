@@ -1,13 +1,13 @@
 ---
 ---
 
-@import "jekyll-theme-tactile";
+// @import "jekyll-theme-tactile";
 header {
   background-image: url('../images/horizontal.png');
   background-size: cover;
   min-height: 70px;
   padding: 30px;
-  border-bottom: 3px solid #444444;
+  border-bottom: 1px solid #444444;
   z-index: -1;
   h2 {
     color: #000000;
@@ -42,28 +42,24 @@ a:hover {
   }
   a:hover {
     text-decoration: none;
-    img {
-      animation: expand 0.4s ease-in-out;
-      animation-fill-mode: forwards;
-    }
   }
 }
 
-footer {
-  padding: 20px;
-  margin-top: auto;
-  border-bottom: black solid 2px;
-}
+// footer {
+//   padding: 20px;
+//   margin-top: auto;
+//   border-bottom: black solid 2px;
+// }
 
 .links {
   min-height: 50px;
-  border-bottom: black solid 2px;
+  border-bottom: black solid 1px;
 }
 
 .link {
   display: inline-block;
   float: right;
-  border-left: black solid 2px;
+  border-left: black solid 1px;
   padding: 5px;
   padding-top: 8px;
 }
@@ -74,9 +70,14 @@ footer {
   padding: 8px 15px 5px 15px;
 }
 
-.slide {
-  animation: slide 3s;
-  animation-fill-mode: forwards;
+.rotate {
+  animation: rotate 1s;
+  // animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
 }
 
 @keyframes slide {
@@ -87,52 +88,83 @@ footer {
     transform: translate(-200px, 0);
   }
 }
+//
+// .inner {
+//   width: 100%;
+// }
 
-.inner {
-  width: 100%;
+// .about-content {
+//   border-bottom: solid 2px black;
+//   width: 100%;
+//   padding: 10px 30px;
+// }
+//
+// .project-content {
+//   border-bottom: solid 2px black;
+//   width: 100%;
+//   padding: 10px 30px;
+// }
+
+.column1 {
+  width: 100px;
+  height: 400px;
+  display: inline-block;
+  float: left;
+  // background-color: red;
+  border: solid 1px black;
 }
 
-.about-content {
-  border-bottom: solid 2px black;
-  width: 100%;
-  padding: 10px 30px;
+.column2 {
+  width: 100px;
+  height: 400px;
+  display: inline-block;
+  float: right;
+  // background-color: yellow;
+  border: solid 1px black;
+
 }
 
-.project-content {
-  border-bottom: solid 2px black;
-  width: 100%;
-  padding: 10px 30px;
+.column3 {
+  width: 100px;
+  height: 400px;
+  display: inline-block;
+  float: right;
+  // background-color: purple;
+  border: solid 1px black;
+
 }
+
+.column4 {
+  width: 100px;
+  height: 400px;
+  display: inline-block;
+  float: right;
+  // background-color: black;
+  border: solid 1px black;
+
+}
+
 
 .views {
-  width: 52%;
+  width: 75%;
+  display: inline-block;
   margin: 0 auto;
-  border-bottom: solid 2px black;
-  border-right: solid 2px black;
-  border-left: solid 2px black;
-  padding: 5px 30px;
+  border-bottom: solid 1x black;
+  border-right: solid 1x black;
+  border-left: solid 1x black;
+  // padding: 5px 30px;
+  // background-color: #d3d3d3;
   li {
+    padding-top: 10px;
     list-style-type: none;
-    border-bottom: solid 2px black;
-
   }
-  #bottom-row {
-    border-bottom: 0px;
-    margin-bottom: -20px;
+  .section {
+    border-bottom: black solid 1px;
+    padding: 20px;
   }
-
-
-
-  // #about {
-  //   border-right: solid black 2px;
-  //   display: inline-block;
-  //   padding-right: 10px;
-  // }
-  // .projects {
-  //   border-right: solid black 2px;
-  //   display: inline-block;
-  //   padding-right: 20px;
-  // }
+  .project4 {
+    border-bottom: none;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -150,7 +182,7 @@ footer {
     float: none;
     width: 100%;
     border-left: 0px;
-    border-bottom: solid 2px black;
+    border-bottom: solid 1px black;
     img {
       // margin-left: 30px;
       margin-bottom: 10px;
@@ -160,20 +192,14 @@ footer {
 }
 
 @keyframes expand {
-  // from { height: 32px; }
   to { height: 32px; }
 }
 
-// #container {
-//   z-index: -1;
-//   margin-top: -40px
+// .unit {
+//     background-color: #eeeeee;
+//     height: 20px;
+//     width: 20px;
+//     border: solid black 1px;
+//     display: inline-block;
+//     float: left
 // }
-
-.unit {
-    background-color: #eeeeee;
-    height: 20px;
-    width: 20px;
-    border: solid black 1px;
-    display: inline-block;
-    float: left
-}
