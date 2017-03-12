@@ -1,7 +1,10 @@
 ---
 ---
 
-// @import "jekyll-theme-tactile";
+@import "jekyll-theme-tactile";
+body {
+  background-color: rgba(182,185,193,0.9)
+}
 header {
   background-image: url('../images/horizontal.png');
   background-size: cover;
@@ -21,6 +24,7 @@ header {
     margin-right: 10px;
   }
 }
+
 
 // #container {
 //   background-color: #ffffff;

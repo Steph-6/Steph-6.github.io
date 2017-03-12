@@ -2,6 +2,4 @@
 layout: portfolio
 ---
 
-##About Me
-
-[home](./)
+<div class="container">red</div>

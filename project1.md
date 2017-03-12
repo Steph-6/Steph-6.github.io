@@ -2,6 +2,5 @@
 layout: portfolio
 ---
 
-##Projects
-
+i am project 1
 [home](./)
