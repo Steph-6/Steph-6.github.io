@@ -3,7 +3,7 @@
 
 @import "jekyll-theme-tactile";
 body {
-
+  background-color: white;
 }
 header {
   background-image: url('../images/horizontal.png');
@@ -86,10 +86,10 @@ a:hover {
   width: 75%;
 }
 
-#main-content {
-  background: linear-gradient(white, white, white, #aaaaaa);
-
-}
+// #main-content {
+//   background: linear-gradient(white, white, white, #aaaaaa);
+//
+// }
 
 
 .views {
