@@ -11,20 +11,20 @@ header {
   z-index: -1;
   h2 {
     color: #000000;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
     margin-left: 20px;
   }
   img {
     float: right;
-    margin-top: -105px;
+    margin-top: -125px;
     margin-right: 10px;
   }
 }
 
-#container {
-  background-color: #eeeeee;
-}
+// #container {
+//   background-color: #ffffff;
+// }
 
 a {
   color: #333333;
@@ -43,7 +43,8 @@ a:hover {
   a:hover {
     text-decoration: none;
     img {
-      animation: expand 0.4s infinite ease-in-out;
+      animation: expand 0.4s ease-in-out;
+      animation-fill-mode: forwards;
     }
   }
 }
@@ -104,22 +105,34 @@ footer {
 }
 
 .views {
-  width: 50%;
+  width: 52%;
   margin: 0 auto;
   border-bottom: solid 2px black;
-  border-right: solid 1px black;
-  border-left: solid 1px black;
+  border-right: solid 2px black;
+  border-left: solid 2px black;
   padding: 5px 30px;
-  #about {
-    border-right: solid black 2px;
-    display: inline-block;
-    padding-right: 10px;
+  li {
+    list-style-type: none;
+    border-bottom: solid 2px black;
+
   }
-  .projects {
-    border-right: solid black 2px;
-    display: inline-block;
-    padding-right: 20px;
+  #bottom-row {
+    border-bottom: 0px;
+    margin-bottom: -20px;
   }
+
+
+
+  // #about {
+  //   border-right: solid black 2px;
+  //   display: inline-block;
+  //   padding-right: 10px;
+  // }
+  // .projects {
+  //   border-right: solid black 2px;
+  //   display: inline-block;
+  //   padding-right: 20px;
+  // }
 }
 
 @media only screen and (max-width: 550px) {
@@ -146,11 +159,21 @@ footer {
   }
 }
 
-.lines {
-  background-color: red;
-  width: 100%;
+@keyframes expand {
+  // from { height: 32px; }
+  to { height: 32px; }
 }
 
-@keyframes expand {
-  50% { height: 32px; }
+// #container {
+//   z-index: -1;
+//   margin-top: -40px
+// }
+
+.unit {
+    background-color: #eeeeee;
+    height: 20px;
+    width: 20px;
+    border: solid black 1px;
+    display: inline-block;
+    float: left
 }
