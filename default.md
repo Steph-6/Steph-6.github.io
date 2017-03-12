@@ -1,3 +1,7 @@
+---
+layout: portfolio
+---
+
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 # [](#header-1)Header 1

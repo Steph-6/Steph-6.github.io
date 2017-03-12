@@ -3,7 +3,7 @@
 
 @import "jekyll-theme-tactile";
 body {
-  background-color: rgba(182,185,193,0.9)
+
 }
 header {
   background-image: url('../images/horizontal.png');
@@ -25,11 +25,6 @@ header {
   }
 }
 
-
-// #container {
-//   background-color: #ffffff;
-// }
-
 a {
   color: #333333;
   font-size: 20px
@@ -49,11 +44,12 @@ a:hover {
   }
 }
 
-// footer {
-//   padding: 20px;
-//   margin-top: auto;
-//   border-bottom: black solid 2px;
-// }
+.footer {
+  padding: 20px;
+  margin-top: auto;
+  border-bottom: black solid 2px;
+  background: linear-gradient(#aaaaaa, white)
+}
 
 .links {
   min-height: 50px;
@@ -92,10 +88,15 @@ a:hover {
     transform: translate(-200px, 0);
   }
 }
-//
-// .inner {
-//   width: 100%;
-// }
+
+.inner {
+  width: 75%;
+}
+
+#main-content {
+  background: linear-gradient(white, white, white, #aaaaaa);
+
+}
 
 // .about-content {
 //   border-bottom: solid 2px black;
@@ -108,45 +109,6 @@ a:hover {
 //   width: 100%;
 //   padding: 10px 30px;
 // }
-
-.column1 {
-  width: 100px;
-  height: 400px;
-  display: inline-block;
-  float: left;
-  // background-color: red;
-  border: solid 1px black;
-}
-
-.column2 {
-  width: 100px;
-  height: 400px;
-  display: inline-block;
-  float: right;
-  // background-color: yellow;
-  border: solid 1px black;
-
-}
-
-.column3 {
-  width: 100px;
-  height: 400px;
-  display: inline-block;
-  float: right;
-  // background-color: purple;
-  border: solid 1px black;
-
-}
-
-.column4 {
-  width: 100px;
-  height: 400px;
-  display: inline-block;
-  float: right;
-  // background-color: black;
-  border: solid 1px black;
-
-}
 
 
 .views {
