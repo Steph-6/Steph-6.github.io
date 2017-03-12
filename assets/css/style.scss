@@ -35,21 +35,6 @@ a:hover {
   text-decoration: line-through;
 }
 
-.link {
-  a {
-    padding: 20px;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-}
-
-.footer {
-  padding: 20px;
-  margin-top: auto;
-  border-bottom: black solid 2px;
-  background: linear-gradient(#aaaaaa, white)
-}
 
 .links {
   min-height: 50px;
@@ -62,7 +47,15 @@ a:hover {
   border-left: black solid 1px;
   padding: 5px;
   padding-top: 8px;
+  a {
+    padding: 20px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
+
+
 
 .email-link {
   display: inline-block;
@@ -98,39 +91,33 @@ a:hover {
 
 }
 
-// .about-content {
-//   border-bottom: solid 2px black;
-//   width: 100%;
-//   padding: 10px 30px;
-// }
-//
-// .project-content {
-//   border-bottom: solid 2px black;
-//   width: 100%;
-//   padding: 10px 30px;
-// }
-
 
 .views {
-  width: 75%;
-  display: inline-block;
-  margin: 0 auto;
+  width: 100%;
+  float: left;
   border-bottom: solid 1x black;
   border-right: solid 1x black;
   border-left: solid 1x black;
-  // padding: 5px 30px;
-  // background-color: #d3d3d3;
-  li {
-    padding-top: 10px;
-    list-style-type: none;
+  a:hover {
+    text-decoration: line-through;
   }
-  .section {
+  .left-link {
+    display: inline-block;
+    float: left;
+    border-right: black solid 1px;
     border-bottom: black solid 1px;
-    padding: 20px;
+    padding: 5px;
+    padding-top: 8px;
+    // width: 40px;
   }
-  .project4 {
-    border-bottom: none;
-  }
+}
+
+footer {
+  padding: 20px;
+  margin-top: auto;
+  border-bottom: black solid 2px;
+  // background: red;
+  height: 100px;
 }
 
 @media only screen and (max-width: 550px) {
