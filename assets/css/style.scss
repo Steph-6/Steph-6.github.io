@@ -95,9 +95,9 @@ a:hover {
 .views {
   width: 100%;
   float: left;
-  border-bottom: solid 1x black;
-  border-right: solid 1x black;
-  border-left: solid 1x black;
+  border-bottom: solid 1px black;
+  border-right: solid 1px black;
+  border-left: solid 1px black;
   a:hover {
     text-decoration: line-through;
   }
@@ -105,7 +105,7 @@ a:hover {
     display: inline-block;
     float: left;
     border-right: black solid 1px;
-    border-bottom: black solid 1px;
+    // border-bottom: black solid 1px;
     padding: 5px;
     padding-top: 8px;
     // width: 40px;
