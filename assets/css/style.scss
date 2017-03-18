@@ -4,6 +4,11 @@
 @import "jekyll-theme-tactile";
 body {
   background-color: white;
+  h6 {
+    font-size: 24px;
+    font-weight: 200;
+    font-size: 18px;
+  }
 }
 header {
   background-image: url('../images/horizontal.png');
@@ -39,32 +44,38 @@ a:hover {
 .links {
   min-height: 50px;
   border-bottom: black solid 1px;
-}
-
-.link {
-  display: inline-block;
-  float: right;
   border-left: black solid 1px;
-  padding: 5px;
-  padding-top: 8px;
-  a {
-    padding: 20px;
+  .link {
+    display: inline-block;
+    float: right;
+    border-left: black solid 1px;
+    padding: 5px;
+    padding-top: 8px;
+    a {
+      padding: 20px;
+    }
+    a:hover {
+      text-decoration: none;
+    }
   }
-  a:hover {
-    text-decoration: none;
+  .email-link {
+    display: inline-block;
+    float: right;
+    padding: 0px 20px 5px 15px;
+    h6 {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    #email-icon {
+      margin-top: 9px;
+    }
   }
-}
-
-
-
-.email-link {
-  display: inline-block;
-  float: right;
-  padding: 8px 15px 5px 15px;
 }
 
 .rotate {
   animation: rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   // animation-fill-mode: forwards;
 }
 
@@ -73,26 +84,7 @@ a:hover {
   to { transform: rotate(360deg) }
 }
 
-@keyframes slide {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-200px, 0);
-  }
-}
-
-.inner {
-  width: 75%;
-}
-
-// #main-content {
-//   background: linear-gradient(white, white, white, #aaaaaa);
-//
-// }
-
-
-.views {
+.desc {
   width: 100%;
   float: left;
   border-bottom: solid 1px black;
@@ -105,11 +97,22 @@ a:hover {
     display: inline-block;
     float: left;
     border-right: black solid 1px;
-    // border-bottom: black solid 1px;
-    padding: 5px;
-    padding-top: 8px;
-    // width: 40px;
+    padding: 7px 12px 7px 12px;
+    font-size: 22px;
+    color: black;
   }
+  .right-link {
+    display: inline-block;
+    float: right;
+    border-left: black solid 1px;
+    padding: 7px 12px 7px 12px;
+    font-size: 22px;
+    color: black;
+  }
+}
+
+.inner {
+  width: 75%;
 }
 
 footer {
@@ -120,7 +123,7 @@ footer {
   height: 100px;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 570px) {
   header {
     min-height: 70px;
     h2 {
@@ -142,17 +145,11 @@ footer {
       margin-top: 10px;
     }
   }
+  .desc {
+    display: none;
+  }
 }
 
 @keyframes expand {
   to { height: 32px; }
 }
-
-// .unit {
-//     background-color: #eeeeee;
-//     height: 20px;
-//     width: 20px;
-//     border: solid black 1px;
-//     display: inline-block;
-//     float: left
-// }

@@ -1,16 +1,30 @@
 $(function() {
-  // let about = false;
-  // let projects = false;
+
   $('#email').css('display', 'none');
-  $('.email-link').on('mouseover', function() {
+  $('.email-link').on('mouseenter', function() {
     $('#email').addClass('animated slideInLeft');
     $('#email').css('display', 'inline-block');
     $('#email-icon').addClass('rotate');
   });
+  $('.email-link').on('mouseleave', function() {
+    $('#email').css('display', 'inline-block');
+    $('#email-icon').removeClass('rotate');
+  });
 
-  $('.mark').on('mouseover', function() {
+  $('.git').on('mouseenter', function() {
     $('.mark').addClass('rotate');
   });
+  $('.git').on('mouseleave', function() {
+    $('.mark').removeClass('rotate');
+  });
+
+  $('.linkedin').on('mouseenter', function() {
+    $('.in').addClass('rotate');
+  });
+  $('.linkedin').on('mouseleave', function() {
+    $('.in').removeClass('rotate');
+  });
+
 
   // $('#about').on('click', function() {
   //   if (projects === true) {
