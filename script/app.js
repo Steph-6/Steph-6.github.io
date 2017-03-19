@@ -2,12 +2,12 @@ $(function() {
 
   $('#email').css('display', 'none');
   $('.email-link').on('mouseenter', function() {
-    $('#email').addClass('animated slideInLeft');
-    $('#email').css('display', 'inline-block');
+    $('#email').addClass('fade');
+    // $('#email').css('display', 'inline-block');
     $('#email-icon').addClass('rotate');
   });
   $('.email-link').on('mouseleave', function() {
-    $('#email').css('display', 'inline-block');
+    // $('#email').css('display', 'inline-block');
     $('#email-icon').removeClass('rotate');
   });
 
@@ -24,6 +24,20 @@ $(function() {
   $('.linkedin').on('mouseleave', function() {
     $('.in').removeClass('rotate');
   });
+
+  $('a').on('click', function() {
+    $('body').css('border', '4px solid rgba(50,50,50,0.3)');
+    $('body').css('filter', 'invert(5%)');
+    $('.inner').html('loading...');
+    setTimeout(function() {
+      $('body').css('border', '2px solid rgba(50,50,50,0.3)');
+    }, 500);
+  });
+
+  // $('body').css('filter', 'invert(100%)');
+
+  // $('.loading').css('display', 'block');
+
 
 
   // $('#about').on('click', function() {
