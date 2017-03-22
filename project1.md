@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 ---
-# Forest Floor
+# Project 1 - Forest Floor
 
 ***
 

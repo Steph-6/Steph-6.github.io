@@ -1,6 +1,4 @@
-console.log('changing');
 $(function() {
-  console.log('loading');
   $('#email').css('display', 'none');
   $('.email-link').on('mouseenter', function() {
     $('#email').addClass('fade');
@@ -33,6 +31,16 @@ $(function() {
       // $('body').css('border', '2px solid rgba(50,50,50,0.3)');
     // }, 500);
   });
+
+  setInterval(function() {
+    const choose = chooseSquare(1,13);
+    $(`#row${choose}`).css('border-bottom', '0px');
+  }, 300);
+
+  setInterval(function() {
+    const choose = chooseSquare(1,13);
+    $(`#row${choose}`).css('border-bottom', 'solid 2px white');
+  }, 300);
 
 
   // $('#about').on('click', function() {
