@@ -1,9 +1,9 @@
+console.log('changing');
 $(function() {
-
+  console.log('loading');
   $('#email').css('display', 'none');
   $('.email-link').on('mouseenter', function() {
     $('#email').addClass('fade');
-    console.log('fading');
     $('#email').css('display', 'inline-block');
     $('#email-icon').addClass('rotate');
   });
