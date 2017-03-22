@@ -33,13 +33,6 @@ $(function() {
     // }, 500);
   });
 
-  
-
-  // $('body').css('filter', 'invert(100%)');
-
-  // $('.loading').css('display', 'block');
-
-
 
   // $('#about').on('click', function() {
   //   if (projects === true) {
