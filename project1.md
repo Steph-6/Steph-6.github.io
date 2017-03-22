@@ -2,6 +2,7 @@
 layout: portfolio
 ---
 # Forest Floor
+
 ***
 
 Overview  
@@ -12,10 +13,12 @@ The game can be played here: [Forest Floor](https://afternoon-journey-42512.hero
 
 ***
 
-Intial Concept - MVP  
+Initial Concept - MVP  
 
-My intial idea was a game based aroud Guitar Hero, three columns with falling squares where the player had to click the square when it was within certain boundaries.
+My initial idea was a game based around Guitar Hero, three columns with falling squares where the player had to click the square when it was within certain boundaries.
+
 ***
+
 Game Play logic  
 
 My concept led to a simple MVP:  
@@ -60,26 +63,29 @@ Now that I had MVP I started adding additional features.
 * A 'New Game' button that reloaded the page.
 
 ***
+
 Styling  
 
 I initially wanted the game to be fast-paced, but after deciding upon the falling squares to be leaves I started to create a calming forest atmosphere. After deciding upon disney like cartoon images for the leaves, it was easy to find a matching background and cartoon bomb.   
 I used an instrumental from Coldplay in the background with popping noises when the user hit an image.  
 Overall I was really happy with the final design and after feedback from my peers it was great to know the game created the laid back user experience that I wanted Forest Floor to have.
+
 ***
 
 Wins  
 
 Reaching MVP early on by writing lots of pseudo code and sticking to the steps in order, meant I had enough time to add the additional level up, and combo features.  
 It also made sure the code was intitally clean so was easy to build upon. As well as this it left me with enough time to style the game properly which I think in the end was really vital to making this simple game so enjoyable.
+
 ***
 
 Challenges  
 
 Playing around with the setInterval and setTimeout functions became slightly confusing to get my head around. Then the logic behind the mouse only succesfully hitting the div only if it was within the play-row boundaries, as opposed to just anywhere on the page.
+
 ***
 
 Improvements  
 
 With more time I would like to add more levels, and maybe alter the styling of the title and score boxes as I think even more minimal could be really nice.   
 I would also definetely make it mobile responsive as I think it could be a great game to play whilst on the move.
-***
