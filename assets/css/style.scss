@@ -4,21 +4,16 @@
 @import "jekyll-theme-tactile";
 body {
   background-color: white;
-  // border: 2px solid rgba(0,0,0,0.4);
-  // filter: drop-shadow(16px 16px 20px grey);
-  h6 {
-    font-size: 24px;
+  font-family: 'Roboto Slab', serif;
+  h2 {
+    font-size: 50px;
     font-weight: 200;
-    font-size: 18px;
+    color: #333333;
   }
 }
 
 h3 {
   color: black;
-}
-
-#main-content {
-  background-color: white;
 }
 
 div {
@@ -36,10 +31,10 @@ header {
   padding: 30px;
   border-bottom: 1px solid rgba(0,0,0,0.3);
   z-index: -1;
-  h2 {
+  h1 {
     color: #000000;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: lighter;
     margin-left: 20px;
   }
   img {
@@ -63,7 +58,6 @@ a:hover {
 .links {
   min-height: 53px;
   border-bottom: rgba(0,0,0,0.4) solid 1px;
-  // border-left: rgba(0,0,0,0.4) solid 1px;
   .link {
     display: inline-block;
     float: right;
@@ -81,31 +75,33 @@ a:hover {
   .email-link {
     display: inline-block;
     float: right;
-    padding: 0px 20px 5px 15px;
+    padding: 10px 20px 5px 15px;
     min-height: 38px;
-
     h6 {
       font-size: 20px;
-      // margin-top: -100px;
-      margin-right: 8px;
-      // font-weight: 350;
+      display: inline-block;
+      margin-right: 10px;
     }
     #email-icon {
       margin-top: 9px;
+      display: inline-block;
+      float: right;
+      margin-top: -1px;
     }
   }
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fade {
-  from { opacity: 0 }
-  to   { opacity: 1 }
-}
+// .fade {
+//   animation-name: fade;
+//   animation-duration: 5s;
+//   animation-fill-mode: forwards;
+//   padding-top: none;
+// }
+//
+// @keyframes fade {
+//   from { opacity: 0 }
+//   to   { opacity: 1 }
+// }
 
 .rotate {
   animation: rotate 2s;
@@ -152,28 +148,12 @@ a:hover {
   }
 }
 
-.row1 {
-  min-height: 25px;
-  float: right;
-  width: 100%;
-  border-bottom: solid 2px red;
-}
-
-.row2 {
-  min-height: 25px;
-  width: 30%;
-  float: right;
-  border-bottom: solid 2px yellow;
-}
-
 .inner {
-  // margin-top: 40px;
-  width: 61%;
-  float: left;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
   border-right: rgba(0,0,0,0.4) solid 1px;
-  // border-top: rgba(0,0,0,0.4) solid 1px;
   padding: 40px;
-  margin-top: -2px;
 }
 
 footer {

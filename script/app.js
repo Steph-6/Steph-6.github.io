@@ -1,12 +1,10 @@
 $(function() {
   $('#email').css('display', 'none');
   $('.email-link').on('mouseenter', function() {
-    $('#email').addClass('fade');
-    $('#email').css('display', 'inline-block');
+    $('#email').fadeIn(5000);
     $('#email-icon').addClass('rotate');
   });
   $('.email-link').on('mouseleave', function() {
-    $('#email').css('display', 'inline-block');
     $('#email-icon').removeClass('rotate');
   });
 
