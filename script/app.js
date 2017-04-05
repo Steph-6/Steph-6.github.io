@@ -35,11 +35,11 @@ function init() {
   console.log(ctx);
 
   var ball = {
-    x: 50,
-    y: 50,
-    vx: 5,
-    vy: 2,
-    radius: 10,
+    x: 1,
+    y: 1,
+    vx: 1,
+    vy: 1,
+    radius: 1,
     color: 'black',
     draw: function() {
       ctx.beginPath();
@@ -68,7 +68,7 @@ function init() {
     raf = window.requestAnimationFrame(draw);
   }
 
-  canvas.on ('mouseover', function(e) {
+  canvas.on('mouseover', function(e) {
     raf = window.requestAnimationFrame(draw);
   });
 
