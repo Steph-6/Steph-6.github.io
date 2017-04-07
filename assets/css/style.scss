@@ -137,7 +137,7 @@ a:hover {
   }
 }
 
-.start {
+.play {
   width: 20%;
   margin: 10px auto;
   padding: 3px;
@@ -156,9 +156,9 @@ a:hover {
   border-right: rgba(0,0,0,0.4) solid 1px;
 }
 
-#snake {
+.gameBoard {
   height: 500px;
-  width: 750px;
+  width: 100%;
 }
 
 footer {

@@ -27,59 +27,18 @@ function init() {
 
 // *********** game ************
 
-  const canvas = $('#snake');
-  const ctx    = snake.getContext('2d');
-  let raf      = null;
-
-  console.log(canvas);
-  console.log(ctx);
-
-  var ball = {
-    x: 1,
-    y: 1,
-    vx: 1,
-    vy: 1,
-    radius: 1,
-    color: 'black',
-    draw: function() {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
-      ctx.closePath();
-      ctx.fillStyle = this.color;
-      ctx.fill();
-    }
-  };
-
-  function draw() {
-    ctx.clearRect(0,0, canvas.width, canvas.height);
-    ball.draw();
-    ball.x += ball.vx;
-    ball.y += ball.vy;
-
-    if (ball.y + ball.vy > canvas.height ||
-        ball.y + ball.vy < 0) {
-      ball.vy = -ball.vy;
-    }
-    if (ball.x + ball.vx > canvas.width ||
-        ball.x + ball.vx < 0) {
-      ball.vx = -ball.vx;
-    }
-
-    raf = window.requestAnimationFrame(draw);
-  }
-
-  canvas.on('mouseover', function(e) {
-    raf = window.requestAnimationFrame(draw);
-  });
-
-  canvas.on('mouseout', function(e) {
-    window.cancelAnimationFrame(raf);
-  });
-
-  ball.draw();
-}
 
 
+// $('.start').on('click', function() {
+//   console.log('clicked');
+//   // raf = window.requestAnimationFrame(draw);
+//   $('.start').addClass('pause');
+//   $('.start').removeClass('start');
+// });
+//
+// $('.pause').on('click', function () {
+//   // window.cancelAnimationFrame(raf);
+// });
 
 // $('a').on('click', function() {
 //   $('body').css('border', '6px solid rgba(50,50,50,0.3)');
