@@ -153,6 +153,9 @@ a:hover {
 
 .inner {
   width: 100%;
+  div {
+    box-shadow: none;
+  }
   .inner-content {
     width: 60%;
     text-align: center;
