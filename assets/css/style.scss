@@ -215,4 +215,10 @@ footer {
   .desc {
     display: none;
   }
+  .inner {
+    .inner-content {
+      width: 90%;
+    }
+  }
+
 }
