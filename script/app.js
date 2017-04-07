@@ -24,7 +24,7 @@ function init() {
   $('.linkedin').on('mouseleave', function() {
     $('.in').removeClass('rotate');
   });
-
+}
 // *********** game ************
 
 
