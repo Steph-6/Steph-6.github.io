@@ -91,14 +91,6 @@ a:hover {
       margin-top: -1px;
     }
   }
-  // .cv {
-  //   a {
-  //     font-size: 20px;
-  //   }
-  // }
-  // .cv:hover {
-  //   text-decoration: line-through;
-  // }
 }
 
 .rotate {
@@ -156,17 +148,6 @@ a:hover {
   }
 }
 
-.play {
-  width: 20%;
-  margin: 10px auto;
-  padding: 3px;
-  border: rgba(0,0,0,0.4) solid 0.5px;
-  h6 {
-    font-size: 20px;
-    text-align: center;
-  }
-}
-
 .inner {
   width: 100%;
   div {
@@ -183,11 +164,6 @@ a:hover {
       color: black;
     }
   }
-}
-
-.gameBoard {
-  height: 500px;
-  width: 100%;
 }
 
 footer {
