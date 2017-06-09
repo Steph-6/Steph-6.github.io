@@ -5,7 +5,7 @@
     <title>Stephanie Robinson</title>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Bitter|Sanchez|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Sanchez|Roboto+Slab" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -14,9 +14,31 @@
     <script src="../script/app.js" charset="utf-8"></script>
   </head>
   <body>
-    <!-- top and bottom divs with animated lines - set width and bottom to drift off -->
-    <!-- display none on email here instead of on window onload -->
-    <div class="title">
+    <header>
+      <a href="{{ "/" | prepend: site.baseurl }}"><h2 class="animated slideInLeft">STEPHANIE <br/> ROBINSON</h2></a>
+      <a href="{{ "/" | prepend: site.baseurl }}"><img class="animated slideInRight" src="../assets/images/logo.png" width="120px"></a>
+    </header>
+
+    <div id="main_content" class="no-shadow">
+      <div class="links no-shadow">
+        <div class="link linkedin">
+          <a href="https://www.linkedin.com/in/stephanie-robinson/">
+            <img src="../assets/images/linked.png" height="30px">
+            <img class="in" src="../assets/images/in.png" height="30px">
+          </a>
+        </div>
+        <div class="link git">
+          <a href="https://github.com/Steph-6">
+            <img src="../assets/images/github.png" height="30px">
+            <img class="mark" src="../assets/images/github-mark.png" height="30px">
+          </a>
+        </div>
+        <div class="email-link no-shadow">
+          <h6 id="email">steph.robinson95@gmail.com</h6>
+          <img id="email-icon" src="../assets/images/email.png" height="30px">
+        </div>
+      </div>
+
       <div class="desc">
         <div class="left-link">
           <h6>Junior Front End Developer</h6>
@@ -34,30 +56,6 @@
           <a href="../assets/CV_Stephanie_Robinson.pdf" download>
             Download CV
           </a>
-        </div>
-      </div>
-
-      <header>
-        <a href="{{ "/" | prepend: site.baseurl }}"><h2 class="animated slideInLeft">STEPHANIE <br/> ROBINSON</h2></a>
-        <a href="{{ "/" | prepend: site.baseurl }}"><img class="animated slideInRight" src="../assets/images/logo.png" width="120px"></a>
-      </header>
-
-      <div class="links">
-        <div class="link linkedin">
-          <a href="https://www.linkedin.com/in/stephanie-robinson/">
-            <img src="../assets/images/linked.png" height="30px">
-            <img class="in" src="../assets/images/in.png" height="30px">
-          </a>
-        </div>
-        <div class="link git">
-          <a href="https://github.com/Steph-6">
-            <img src="../assets/images/github.png" height="30px">
-            <img class="mark" src="../assets/images/github-mark.png"  height="30px">
-          </a>
-        </div>
-        <div class="email-link no-shadow">
-          <h6 id="email">steph.robinson95@gmail.com</h6>
-          <img id="email-icon" src="../assets/images/email.png"   height="30px">
         </div>
       </div>
 
@@ -82,5 +80,10 @@
         </div>
       </div>
     </div>
+
+    <div class="inner no-shadow">
+      {{ content }}
+    </div>
+
   </body>
 </html>
