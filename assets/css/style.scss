@@ -3,8 +3,65 @@
 
 @import "jekyll-theme-tactile";
 body {
-  background-color: white;
+  background-color: #FCFEFF;
 }
+
+.name-box {
+  background-color: #001D37;
+  width: 33em;
+  height: 11em;
+  margin-left: 5em;
+  margin-top: 5em;
+  z-index: 2;
+  position: absolute;
+}
+
+.name {
+  color: #FCFEFF;
+  font-size: 2.6em;
+  margin-left: -0.1em;
+  width: 100px;
+  display: block;
+}
+
+.line-horizontal {
+  background: none;
+  background-color: #FCFEFF;
+  border-bottom: #001D37 solid 1px;
+  margin-top: 40px;
+  padding-bottom: 2px;
+  z-index: 1;
+}
+
+.large {
+  width: 450px;
+}
+
+.middle {
+  width: 400px;
+}
+
+.small {
+  width: 200px;
+}
+
+.about {
+  width: 350px;
+}
+
+.projects {
+  width: 300px;
+}
+
+.line-vertical {
+  background: none;
+  background-color: #FCFEFF;
+  border-right: #001D37 solid 1px;
+  width: 43px;
+  padding-bottom: 50px;
+  display: inline-block;
+}
+
 
 // body {
 //   font-family: 'Montserrat', sans-serif;
