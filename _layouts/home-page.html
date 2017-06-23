@@ -11,38 +11,45 @@
     <script src="../script/app.js" charset="utf-8"></script>
   </head>
   <body>
-    <div class="name-box">
-      <div class="name">
-        STEPHANIE <br /> ROBINSON
+    <div class="content">
+      <div class="name-box">
+        <div class="name">
+          STEPHANIE <br /> ROBINSON
+        </div>
+        <a href="{{ "/" | prepend: site.baseurl }}"><img src="../assets/images/logo.png" width="120px" class="logo"></a>
       </div>
-      <a href="{{ "/" | prepend: site.baseurl }}"><img src="../assets/images/logo.png" width="120px" class="logo"></a>
+
+      <div class="lines-horizontal">
+        <div class="line-horizontal small"></div>
+        <div class="line-horizontal large"></div>
+        <div class="line-horizontal middle"></div>
+        <div class="line-horizontal small"></div>
+        <div class="line-horizontal middle"></div>
+        <div class="line-horizontal middle"></div>
+        <div class="line-horizontal large"></div>
+        <div class="line-horizontal small"></div>
+        <div class="line-horizontal small"></div>
+        <div class="line-horizontal about"></div><a href="#">ABOUT</a>
+        <div class="line-horizontal projects"></div><a href="#">PROJECTS</a>
+        <div class="line-horizontal large"></div>
+      </div>
+
+      <div class="lines-vertical">
+        <div class="line-vertical long"></div>
+        <div class="line-vertical long"></div>
+        <div class="line-vertical medium"></div>
+        <div class="line-vertical short"></div>
+        <div class="line-vertical long"></div>
+        <div class="line-vertical long"></div>
+        <div class="line-vertical short"></div>
+      </div>
     </div>
 
-    <div class="lines-horizontal">
-      <div class="line-horizontal small"></div>
-      <div class="line-horizontal large"></div>
-      <div class="line-horizontal middle"></div>
-      <div class="line-horizontal small"></div>
-      <div class="line-horizontal middle"></div>
-      <div class="line-horizontal middle"></div>
-      <div class="line-horizontal large"></div>
-      <div class="line-horizontal small"></div>
-      <div class="line-horizontal small"></div>
-      <div class="line-horizontal about"></div><a href="#">ABOUT</a>
-      <div class="line-horizontal projects"></div><a href="#">PROJECTS</a>
-      <div class="line-horizontal small"></div>
-    </div>
 
-    <div class="lines-vertical">
-      <div class="line-vertical long"></div>
-      <div class="line-vertical long"></div>
-      <div class="line-vertical medium"></div>
-      <div class="line-vertical short"></div>
-      <div class="line-vertical long"></div>
-      <div class="line-vertical long"></div>
-      <div class="line-vertical short"></div>
+    <div class="game">
+      <img src="../assets/images/running.gif" alt="" width="50px" class="man">
+      <img src="../assets/images/jumping.gif" alt="" width="150px" class="jumping">
     </div>
-
 
     <!-- top and bottom divs with animated lines - set width and bottom to drift off -->
     <!-- display none on email here instead of on window onload -->

@@ -6,6 +6,10 @@ body {
   background-color: #FCFEFF;
 }
 
+.content {
+  min-height: 100%;
+}
+
 .name-box {
   background-color: #001D37;
   width: 33em;
@@ -33,13 +37,12 @@ body {
 .lines-vertical {
   position: absolute;
   z-index: 1;
-  height: 700px;
 }
 
 .line-horizontal {
   background: none;
-  border-bottom: #001D37 solid 1px;
-  margin-top: 40px;
+  border-bottom: #001D37 solid 1.5px;
+  margin-top: 30px;
   padding-bottom: 2px;
   z-index: 1;
 }
@@ -67,17 +70,42 @@ body {
 .line-vertical {
   background: none;
   background-color: #FCFEFF;
-  border-right: #001D37 solid 1px;
-  width: 43px;
+  border-right: #001D37 solid 1.5px;
+  width: 30px;
   padding-bottom: 50px;
   display: inline-block;
-  height: 550px;
+  height: 350px;
 }
 
-.medium {
+.long {
   height: 400px;
 }
 
+.medium {
+  height: 150px;
+}
+
+.short {
+  height: 50px;
+}
+
+.game {
+  margin-top: 450px;
+  width: 100%;
+  border-bottom: #001D37 solid 1.5px;
+  display: inline-block;
+  height: 120px;
+  padding-bottom: 10px;
+}
+
+.man {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.jumping {
+  margin-left: 15px;
+}
 
 // body {
 //   font-family: 'Montserrat', sans-serif;
