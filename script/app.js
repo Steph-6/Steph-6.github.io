@@ -1,7 +1,18 @@
 window.onload = init;
 
 function init() {
-  $('.jumping').hide();
+
+  // $('.about-line').hover(
+  //   function() {
+  //     console.log('hello');
+  //     $('.about-line').css('width', '400px');
+  //   }, function() {
+  //     console.log('bye');
+  //     $('.about-line').css('width', '350px');
+  //   });
+  // $('.man').hover(expand(),shrink());
+
+
   $('.man').click(function(){
     $('.man').hide();
     setTimeout(function() {
@@ -12,6 +23,7 @@ function init() {
       $('.jumping').hide();
     }, 900);
   });
+
   //  {
   //   console.log('clicked');
   //   // $('.man').css('display', 'none');
@@ -54,4 +66,18 @@ function init() {
   // });
 
   // only on change of window between title and portfolio animate the logo and name
+}
+
+function expand() {
+  console.log('expanding');
+}
+
+function shrink() {
+  console.log('shrinking');
+}
+
+function chooseSquare(a, b) {
+  min = Math.ceil(a);
+  max = Math.floor(b);
+  return Math.floor(Math.random() * (max - min)) + min;
 }

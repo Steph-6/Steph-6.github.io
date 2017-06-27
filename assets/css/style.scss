@@ -24,19 +24,21 @@ body {
   color: #FCFEFF;
   font-size: 2.6em;
   font-weight: lighter;
-  margin-left: -0.1em;
+  margin-left: -0.05em;
+  margin-top: 20px;
   width: 100px;
-  display: block;
+  display: inline-block;
+}
+
+.logo {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .lines-horizontal {
   position: absolute;
   z-index: 2;
-}
-
-.lines-vertical {
-  position: absolute;
-  z-index: 1;
 }
 
 .line-horizontal {
@@ -59,21 +61,27 @@ body {
   width: 200px;
 }
 
-.about {
+.about-line {
   width: 350px;
 }
 
-.projects {
+.projects-line {
   width: 300px;
 }
 
+.lines-vertical {
+  position: absolute;
+  z-index: 1;
+}
+
 .line-vertical {
+  display: inline-block;
+  float: left;
   background: none;
   background-color: #FCFEFF;
   border-right: #001D37 solid 1.5px;
   width: 30px;
   padding-bottom: 50px;
-  display: inline-block;
   height: 350px;
 }
 
@@ -82,11 +90,19 @@ body {
 }
 
 .medium {
-  height: 150px;
+  height: 300px;
+}
+
+.medium-long {
+  height: 340px;
 }
 
 .short {
-  height: 50px;
+  height: 250px;
+}
+
+.link {
+  float: right;
 }
 
 .game {
