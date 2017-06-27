@@ -10,8 +10,15 @@ function init() {
   //     console.log('bye');
   //     $('.about-line').css('width', '350px');
   //   });
-  // $('.man').hover(expand(),shrink());
 
+  moveLines();
+
+  function moveLines(){
+    const lineHorizontal      = $('.line-horizontal')[chooseSquare(0,8)];
+    const lineHorizontalWidth = $('.line-horizontal')[chooseSquare(0,8)].offsetWidth;
+    console.log($('.line-horizontal')[chooseSquare(0,8)].offsetWidth);
+    lineHorizontal.css('width', lineHorizontalWidth + 100);
+  }
 
   $('.man').click(function(){
     $('.man').hide();
@@ -23,24 +30,6 @@ function init() {
       $('.jumping').hide();
     }, 900);
   });
-
-  //  {
-  //   console.log('clicked');
-  //   // $('.man').css('display', 'none');
-  //   $('.man').hide('100', function() {
-  //
-  //   });
-  // });
-
-  // function hide() {
-  //   $('.man').style.visibility = 'hidden';
-  //   setTimeout('show()', 2000);
-  // }
-  //
-  // function show() {
-  //   $('.man').style.visibility = 'visible';
-  //   setTimeout('hide()', 2000);
-  // }
 
   // $('#email').css('display', 'none');
   // $('.email-link').on('mouseenter', function() {
